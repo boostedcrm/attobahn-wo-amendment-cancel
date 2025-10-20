@@ -152,15 +152,13 @@ function App() {
               {woDetails?.Amendment_Stage !== "Collect Amendment Details" && (
                 <Typography>
                   If you cancel now the agreement sent for Signature will be
-                  voided and no new agreement will be sent. You will need to
-                  Initiate an Amendment.
+                  voided and no new agreement will be sent. You will need to Initiate the Amendment from the beginning.
                   <br /> <br /> Do you wish to proceed ?
                 </Typography>
               )}
               {woDetails?.Amendment_Stage === "Collect Amendment Details" && (
                 <Typography>
-                  If you cancel now, the Process will be cancelled. You will
-                  need to Initiate an Amendment again.
+                  If you cancel now, the Process will be cancelled. You will need to Initiate the Amendment from the beginning.
                   <br /> <br /> Do you wish to proceed ?
                 </Typography>
               )}
