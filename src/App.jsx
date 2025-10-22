@@ -151,14 +151,17 @@ function App() {
             <Box sx={{ mt: 7, mx: "auto" }}>
               {woDetails?.Amendment_Stage !== "Collect Amendment Details" && (
                 <Typography>
-                  If you cancel now the agreement sent for Signature will be
-                  voided and no new agreement will be sent. You will need to Initiate the Amendment from the beginning.
+                  If you Cancel, the agreement sent for Signature will be voided
+                  and no new agreement will be sent. When you are ready, you
+                  will need to Initiate the Amendment from the beginning.
                   <br /> <br /> Do you wish to proceed ?
                 </Typography>
               )}
               {woDetails?.Amendment_Stage === "Collect Amendment Details" && (
                 <Typography>
-                  If you cancel now, the Process will be cancelled. You will need to Initiate the Amendment from the beginning.
+                  If you Cancel, the Process will be cancelled. When you are
+                  ready, you will need to Initiate the Amendment from the
+                  beginning.
                   <br /> <br /> Do you wish to proceed ?
                 </Typography>
               )}
