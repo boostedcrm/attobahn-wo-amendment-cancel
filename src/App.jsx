@@ -83,6 +83,15 @@ function App() {
   const handleProceed = async () => {
     setLoading(true);
     const handleCleanAmendmentSection = async () => {
+      if (woDetails?.amendment_writer_id) {
+        let del_doc = {
+          url: `https://www.zohoapis.com/crm/v2/functions/Delete_Writerdoc/actions/execute?auth_type=apikey&zapikey=1003.f17288e8be0ff967ce2d7f32d3986545.88ee92b529690dda7c74310aef293bfc&docid=${woDetails?.amendment_writer_id}`,
+        };
+
+        ZOHO.CRM.HTTP.post(del_doc).then(function (data) {
+          console.log(data);
+        });
+      }
       const config = {
         Entity: entity,
         APIData: {
